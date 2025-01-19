@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-container
-        image: heena2325/hello-worldpy:latest
+        image: heena2325/hello-world-py:latest
         ports:
         - containerPort: 80
         
