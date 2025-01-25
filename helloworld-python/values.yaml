@@ -1,5 +1,5 @@
 app:
-  replicas: 1
+  replicas: 2
 
 image: 
   repository: heena2325/hello-world-py
