@@ -1,0 +1,21 @@
+app:
+  replicas: 1
+
+image: 
+  repository: heena2325/hello-world-py
+  tag: latest
+  pullPolicy: IfNotPresent
+
+containerPort: 80
+
+resources:
+    limits:
+      cpu: 0.2
+      memory: 500Mi
+    requests:
+      cpu: 0.2
+      memory: 500Mi
+
+service:
+  type: ClusterIP
+  port: 80
