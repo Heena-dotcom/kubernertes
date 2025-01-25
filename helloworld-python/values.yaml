@@ -9,12 +9,13 @@ image:
 containerPort: 80
 
 resources:
-    limits:
-      cpu: 0.2
-      memory: 500Mi
-    requests:
-      cpu: 0.2
-      memory: 500Mi
+  requests:
+    memory: "128Mi"
+    cpu: "250m"
+  limits:
+    memory: "256Mi"
+    cpu: "500m"
+
 
 service:
   type: ClusterIP
