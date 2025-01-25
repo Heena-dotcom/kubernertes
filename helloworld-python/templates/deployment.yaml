@@ -6,11 +6,11 @@ spec:
   replicas: {{ .Values.app.replicas }}
   selector:
     matchLabels:
-      app: {{ include "demo-python-app.name" . | nindent 4}}
+      app: {{ include "demo-python-app.name" . }}
   template:
     metadata:
       labels:
-        app: {{ include "demo-python-app.name" . | nindent 8}}
+        app: {{ include "demo-python-app.name" . }}
     spec:
       containers:
       - name: {{ .Chart.Name }}
