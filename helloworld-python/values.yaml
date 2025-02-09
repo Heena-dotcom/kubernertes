@@ -2,7 +2,7 @@ app:
   replicas: 2
 
 image: 
-  repository: heena2325/hello-world-py
+  repository: heena2325/hello-world-py-2
   tag: latest
   pullPolicy: IfNotPresent
 
